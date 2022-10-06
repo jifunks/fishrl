@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Action	actions.py	/^class Action:$/;"	c
+Action	input_handlers.py	/^from actions import Action, EscapeAction, MovementAction$/;"	i
+EscapeAction	actions.py	/^class EscapeAction(Action):$/;"	c
+EscapeAction	input_handlers.py	/^from actions import Action, EscapeAction, MovementAction$/;"	i
+EscapeAction	main.py	/^from actions import EscapeAction, MovementAction$/;"	i
+EventHandler	input_handlers.py	/^class EventHandler(tcod.event.EventDispatch[Action]):$/;"	c
+EventHandler	main.py	/^from input_handlers import EventHandler$/;"	i
+MovementAction	actions.py	/^class MovementAction(Action):$/;"	c
+MovementAction	input_handlers.py	/^from actions import Action, EscapeAction, MovementAction$/;"	i
+MovementAction	main.py	/^from actions import EscapeAction, MovementAction$/;"	i
+Optional	input_handlers.py	/^from typing import Optional$/;"	i
+__init__	actions.py	/^    def __init__(self, dx: int, dy: int):$/;"	m	class:MovementAction
+ev_keydown	input_handlers.py	/^    def ev_keydown(self, event: tcod.event.KeyDown) -> Optional[Action]:$/;"	m	class:EventHandler
+ev_quit	input_handlers.py	/^    def ev_quit(self, event: tcod.event.Quit) -> Optional[Action]:$/;"	m	class:EventHandler
+event	input_handlers.py	/^import tcod.event$/;"	i
+main	main.py	/^def main() -> None:$/;"	f
+tcod	input_handlers.py	/^import tcod.event$/;"	i
+tcod	main.py	/^import tcod$/;"	i
